@@ -1,0 +1,201 @@
+
+
+
+/*********Typography**********/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.dog-bio{
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #B7B7B7;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.dog-info{
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 10px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    color: #F8F8F8;
+}
+
+/********* Layout ******** */
+
+#card {
+    position: relative;
+    width: 100%;
+}
+
+#card .dog-img{
+    width: 100%;
+    max-width: 534px;
+    border-radius: 15px;
+    max-height: 751px;
+     animation: fadeIn 1s;
+     transition: ease;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#size{
+    max-width: 550px;
+    height: 892px;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 892px;
+}
+
+
+
+/*  Header and Icons */
+
+.chat-icon, .profile-icon {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 23px;
+    margin-top: 24px;
+}
+
+.logo-icon {
+    width: 84px;
+    height: 42px;
+    margin-bottom: 19px;
+    margin-top: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+/* Buttons */
+
+#accept-button, #reject-button{
+    background: white;
+    width: 92px;
+    height: 92px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+
+/* ***Reject Button Specific Styling*** */
+
+#reject-button{
+    margin-right: 25px;
+  
+}
+
+#reject-button:hover {
+    background: #FFE7EF;
+}
+
+#reject-button img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ****Accept Button Specific Styling *** */
+
+#accept-button:hover {
+    background: #DBFFF4;
+}
+
+#accept-button img{
+    width: 41px;
+    height: 36px;
+}
+
+/********** Badges******* */
+
+#like-stamp, #nope-stamp {
+    box-sizing: border-box;
+    position: absolute;
+    width: 233.91px;
+    height: 116.26px;
+    left: 15px;
+    top: 139px;
+    border-radius: 10.3807px;
+    transform: rotate(-30deg);
+    display: none;
+    margin: 0 auto;
+}
+
+
+/* ********Media Queries************ */
+
+@media (min-width: 600px){
+    #like-stamp, #nope-stamp {
+      position: absolute;
+      left: 115px;
+      
+    }
+    
+    .chat-icon {
+    margin-right: 15px;
+}
+
+}
+
+@media (min-width: 700px){
+    
+    #like-stamp, #nope-stamp{
+        position: absolute;
+        left: 220px;
+    }
+
+}
+
+
+@media (min-width: 1000px){
+    #like-stamp, #nope-stamp{
+        position: absolute;
+        left: 410px;
+    }
+    body{
+        background: yellowgreen;
+    }
+   
+}
+
+@media (max-width: 300px) {
+    
+    .dog-info, .dog-bio {
+        font-size: 1em;
+        line-height: 15px;
+    }
+    #like-stamp, #nope-stamp{
+      width: 55%;
+      position: absolute;
+      left: 50px;
+    }
+}
+
+.end{
+    text-align: center;
+    background: pink;
+    font-size: 100px;
+}
